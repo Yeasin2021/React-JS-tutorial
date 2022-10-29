@@ -1,5 +1,12 @@
 body{
     background: #202020;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .form{
@@ -9,7 +16,7 @@ body{
     border-radius: 20px;
     outline: none;
     font-family: Verdana;
-    margin-top: 190px;
+    /* margin-top: 190px; */
 }
 
 h1{
