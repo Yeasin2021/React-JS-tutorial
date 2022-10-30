@@ -11,7 +11,8 @@ const Home = () => {
 const [todos,setTodos] = useState(dummyTodos);
 
 const handaleTodosData = (childData) =>{
-    console.log(childData);
+    // console.log(childData);
+    setTodos([...todos,childData]);
 }
 
   return (
