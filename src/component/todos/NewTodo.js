@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 
-const NewTodo = () => {
+const NewTodo = (props) => {
   const [toDo,setToDo] = useState('');
   const handaleInputChange = (event) => {
         setToDo(event.target.value);
@@ -8,7 +8,8 @@ const NewTodo = () => {
 
   const handaleDataPush = (event) => {
         event.preventDefault();
-        console.log(toDo)
+        // console.log(toDo)
+        props.onChildData(toDo);
   }
 
   return (

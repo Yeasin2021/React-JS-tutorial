@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import NewTodo from './NewTodo';
 import Todos from './Todos';
 
-const Home = () => {
 // declare todo array 
-const todos = ["Item-1","Item-2"];
+const dummyTodos = ["Item-1","Item-2"];
+
+const Home = () => {
+
+const [todos,setTodos] = useState(dummyTodos);
+
+const handaleTodosData = (childData) =>{
+    console.log(childData);
+}
+
   return (
     <div>
-        <NewTodo />
+        <NewTodo onChildData={handaleTodosData} />
         <Todos todos={todos} />
     </div>
   )
