@@ -3,14 +3,40 @@ import React from 'react'
 const Cards = () => {
   return (
     <div>
-      <div class="card" style={{width: "18rem", "background": "white"}}>
-  <img class="card-img-top" src="..." alt="Card image cap" />
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+        <div className='container'>
+            <div className='row'>
+                <div className='col-md-2 col-lg-4 col-sm-1'>
+                    <h1>Hello Grid System </h1>
+                    <p>
+                       With supporting text below as a natural lead-in to additional content.
+                       With supporting text below as a natural lead-in to additional content.
+                       With supporting text below as a natural lead-in to additional content.
+                       With supporting text below as a natural lead-in to additional content.
+                       With supporting text below as a natural lead-in to additional content.
+                    </p>
+                </div>
+                <div className='col-md-2 col-lg-4 col-sm-1'>
+                    <h1>Hello Grid System </h1>
+                    <p>
+                       With supporting text below as a natural lead-in to additional content.
+                       With supporting text below as a natural lead-in to additional content.
+                       With supporting text below as a natural lead-in to additional content.
+                       With supporting text below as a natural lead-in to additional content.
+                       With supporting text below as a natural lead-in to additional content.
+                    </p>
+                </div>
+                <div className='col-md-2 col-lg-4 col-sm-1'>
+                    <h1>Hello Grid System </h1>
+                    <p>
+                       With supporting text below as a natural lead-in to additional content.
+                       With supporting text below as a natural lead-in to additional content.
+                       With supporting text below as a natural lead-in to additional content.
+                       With supporting text below as a natural lead-in to additional content.
+                       With supporting text below as a natural lead-in to additional content.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
   )
 }
