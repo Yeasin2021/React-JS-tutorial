@@ -1,6 +1,7 @@
 
 import React from 'react'
 import { BrowserRouter, Routes, Route, Link  } from "react-router-dom";
+import Cards from './design/Cards';
 
 import Login from './login/Login';
 import Child from './state_lefting/Child';
@@ -16,6 +17,7 @@ import Home from './todos/Home';
                 <Route path='/child' element={<Child />} />
                 <Route path='/parent' element={<Parent />} />
                 <Route path='/todos' element={<Home />} />
+                <Route path='/cards' element={<Cards />} />
             </Routes>
         </BrowserRouter>
     </div>
