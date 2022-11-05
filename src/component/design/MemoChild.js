@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 
 const MemoChild = () => {
   return (
@@ -8,4 +8,4 @@ const MemoChild = () => {
   )
 }
 
-export default MemoChild
+export default memo(MemoChild)
