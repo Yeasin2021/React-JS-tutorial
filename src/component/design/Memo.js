@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Memo = () => {
+const [count,setCount] = useState(0);
+console.log("Render")
   return (
     <div>
-      <h1>Count:0</h1>
+      <h1>Count:{count}</h1>
+      <button onClick={()=> { setCount(count => count+1) }}>Click</button>
     </div>
   )
 }
