@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Cards from '../design/Cards';
 
+
 const Conditional = () => {
     const [isToggled,setToggled] = useState(false);
     // variable element tecnique
