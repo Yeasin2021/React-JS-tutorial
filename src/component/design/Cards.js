@@ -2,7 +2,7 @@ import React from 'react'
 import './cards.css';
 
 const Cards = () => {
-  
+  const variables = 1;
   return (
     <div>
         <div className='container'>
@@ -35,7 +35,8 @@ const Cards = () => {
                         </div>
                     </div>
                 </div>
-                <div className='col-md-4 col-sm-6 col-xs-12 bootCols'>
+                if(variables == 1){
+                    <div className='col-md-4 col-sm-6 col-xs-12 bootCols'>
                     <div className='card text-white bg-secondary mb-3'>
                         <div className='card-body'>
                             <h1>Hello Grid System </h1>
@@ -49,6 +50,11 @@ const Cards = () => {
                         </div>
                     </div>
                 </div>
+                }
+                else{
+                    console.log('nothing')
+                }
+                
             </div>
         </div>
     </div>
