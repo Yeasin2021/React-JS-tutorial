@@ -5,6 +5,7 @@ import Cards from './design/Cards';
 import Memo from './design/Memo';
 
 import Login from './login/Login';
+import Conditional from './others/Conditional';
 import Child from './state_lefting/Child';
 import Parent from './state_lefting/Parent';
 import Home from './todos/Home';
@@ -22,6 +23,7 @@ import Welcome from './Welcome';
                 <Route path='/todos' element={<Home />} />
                 <Route path='/cards' element={<Cards />} />
                 <Route path='/memo' element={<Memo />} />
+                <Route path='/conditional' element={<Conditional />} />
             </Routes>
         </BrowserRouter>
     </div>
