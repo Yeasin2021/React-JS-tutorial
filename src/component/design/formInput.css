@@ -3,10 +3,10 @@
             box-sizing: border-box;
   }
   
-  body {
+  /* body {
     padding: 0;
     margin: 0;
-  }
+  } */
   
   #notfound {
     position: relative;
@@ -14,7 +14,7 @@
     background: #f6f6f6;
   }
   
-  #notfound .notfound {
+  #notfounds .notfound {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -24,7 +24,7 @@
   }
   
   .notfound {
-    max-width: 767px;
+    max-width: 1000px;
     width: 100%;
     line-height: 1.4;
     padding: 110px 40px;
