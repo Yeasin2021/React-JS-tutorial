@@ -2,11 +2,16 @@ import React from 'react'
 
 import './alarm.css';
 
+import Image from './files/clock.svg';
+
+
 const Alarm = () => {
+
+  
   return (
     <div>
         <div class="wrapper">
-      <img src="./files/clock.svg" alt="clock" />
+      <img src={Image} alt="clock" />
       <h1>00:00:00 PM</h1>
       <div class="content">
         <div class="column">
