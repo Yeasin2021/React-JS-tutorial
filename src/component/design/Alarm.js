@@ -1,6 +1,6 @@
 import React from 'react'
 
-
+import './alarm.css';
 
 const Alarm = () => {
   return (
