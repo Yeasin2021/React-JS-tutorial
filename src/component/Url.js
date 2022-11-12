@@ -2,6 +2,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route, Link  } from "react-router-dom";
 import Alarm from './design/Alarm';
+import Header from './design/bootstrap-page/Header';
 import Cards from './design/Cards';
 import Error404 from './design/Error404';
 
@@ -28,6 +29,7 @@ import Welcome from './Welcome';
                 <Route path='/memo' element={<Memo />} />
                 <Route path='/conditional' element={<Conditional />} />
                 <Route path='/alarm' element={<Alarm />} />
+                <Route path='/page' element={<Header />} />
                 <Route path='/*' element={<Error404 />} />
               
             </Routes>
