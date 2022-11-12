@@ -29,7 +29,7 @@ import Welcome from './Welcome';
                 <Route path='/memo' element={<Memo />} />
                 <Route path='/conditional' element={<Conditional />} />
                 <Route path='/alarm' element={<Alarm />} />
-                <Route path='/page' element={<Header />} />
+                {/* <Route path='/page' element={<Header />} /> */}
                 <Route path='/*' element={<Error404 />} />
               
             </Routes>
