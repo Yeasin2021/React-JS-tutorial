@@ -6,25 +6,25 @@ import Image from './files/clock.svg';
 
 
 const Alarm = () => {
-
+    
   
   return (
     <div>
-        <div class="wrapper">
+        <div className="wrapper">
       <img src={Image} alt="clock" />
       <h1>00:00:00 PM</h1>
-      <div class="content">
-        <div class="column">
+      <div className="content">
+        <div className="column">
           <select>
             <option value="Hour" selected disabled hidden>Hour</option>
           </select>
         </div>
-        <div class="column">
+        <div className="column">
           <select>
             <option value="Minute" selected disabled hidden>Minute</option>
           </select>
         </div>
-        <div class="column">
+        <div className="column">
           <select>
             <option value="AM/PM" selected disabled hidden>AM/PM</option>
           </select>
