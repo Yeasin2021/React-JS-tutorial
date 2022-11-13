@@ -66,8 +66,8 @@ const Togol = () => {
         )
       }
       <div style={{ textAlign:'center'}}>
-        <button  style={{ marginRight:'10px'}} onClick={()=>setToggle(true)}>Show</button>
-        <button onClick={()=>setToggle(false)}>Hide</button>
+        <button  style={{ marginRight:'10px'}} onClick={()=>setToggle(!toggle)}>{toggle ? "Hide":"Show"}</button>
+        {/* <button onClick={()=>setToggle(false)}>Hide</button> */}
       </div>
     </div>
   )
