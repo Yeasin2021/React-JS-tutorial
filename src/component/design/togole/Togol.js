@@ -59,6 +59,10 @@ const Togol = () => {
 	        প্রত্যাগমন করিলে পর সেই অঞ্চলের বৃত্তান্ত লিখিবার নিমিত্ত দুই-এক জন বন্ধুবান্ধব আমাকে পুনঃপুন অনুরোধ করিতেন, 
 	        আমি তখন তাঁহাদের উপহাস করিতাম। 
       </p>
+      <div style={{ textAlign:'center'}}>
+        <button  style={{ marginRight:'10px'}}>Show</button>
+        <button>Hide</button>
+      </div>
     </div>
   )
 }
