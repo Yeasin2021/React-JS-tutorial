@@ -1,9 +1,13 @@
 import React from 'react'
+import { useState } from 'react'
 
 const Togol = () => {
+  const [toggle,setToggle] = useState(true);
   return (
     <div>
-      <p style={{ background:"pink",margin:"1rem",padding:"3rem",color:"red",fontSize:'15px'}}>
+      {
+        toggle && (
+            <p style={{ background:"pink",margin:"1rem",padding:"3rem",color:"red",fontSize:'15px'}}>
             বহুকাল হইলো আমি একবার পালামৌ প্রদেশে গিয়াছিলাম, 
 	        প্রত্যাগমন করিলে পর সেই অঞ্চলের বৃত্তান্ত লিখিবার নিমিত্ত দুই-এক জন বন্ধুবান্ধব আমাকে পুনঃপুন অনুরোধ করিতেন, 
 	        আমি তখন তাঁহাদের উপহাস করিতাম। 
@@ -59,9 +63,11 @@ const Togol = () => {
 	        প্রত্যাগমন করিলে পর সেই অঞ্চলের বৃত্তান্ত লিখিবার নিমিত্ত দুই-এক জন বন্ধুবান্ধব আমাকে পুনঃপুন অনুরোধ করিতেন, 
 	        আমি তখন তাঁহাদের উপহাস করিতাম। 
       </p>
+        )
+      }
       <div style={{ textAlign:'center'}}>
-        <button  style={{ marginRight:'10px'}}>Show</button>
-        <button>Hide</button>
+        <button  style={{ marginRight:'10px'}} onClick={()=>setToggle(true)}>Show</button>
+        <button onClick={()=>setToggle(false)}>Hide</button>
       </div>
     </div>
   )
