@@ -1,10 +1,13 @@
-import React from 'react';
-import {faqs} from './Data';
+import React from 'react'
+import { useState } from 'react'
+import {faqsData} from "./Data"
 
 const FAQ = () => {
+  const [faqs,setFaq] = useState(faqsData);
+  console.log(faqs)
   return (
     <div>
-      <h1>FAQS</h1>
+    
     </div>
   )
 }

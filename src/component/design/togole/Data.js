@@ -1,4 +1,4 @@
-export const FAQS = [
+export const faqsData = [
 
     {
         id : 1,
@@ -15,5 +15,5 @@ export const FAQS = [
         title : "titl three",
         description : "description three",
     }
-    
+
 ]
