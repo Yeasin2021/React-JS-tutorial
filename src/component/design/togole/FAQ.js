@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import style from './faq.css'
 
 const FAQ = ({id,title,description}) => {
   const [toggle,setToggle] = useState(false);
@@ -14,10 +15,10 @@ const FAQ = ({id,title,description}) => {
     <div className='container'>
        <h1>Frequently Asked Questions</h1>
         <details>
-            <summary>How do I create accordion?</summary>
-            <button onClick={() => {setToggle(!toggle)}}>{toggle ? '+':'-'}</button>
+            <summary>{title}?</summary>
+            <button onClick={() => {setToggle(!toggle)}}>{toggle ? 'Show':'Hide'}</button>
             <div>
-            {toggle && <p>{description}</p>}
+                {toggle && <p>{description}</p>}
             </div>
         </details>
     </div>
