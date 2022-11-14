@@ -5,19 +5,31 @@ import FAQ from "./FAQ"
 
 const FAQS = () => {
   const [faqs,setFaq] = useState(faqsData);
-  console.log(faqs)
   return (
-    <main>
-        <section>
-          <h1>FAQS</h1>
+    <div>
+        
+          <h1 style={{ color:"blck" }}>FAQS</h1>
           {
             faqs.map(faq => (
               <FAQ key={faq.id} {...faq} />
             ))
           }
-        </section>
-    </main>
+       
+    </div>
   )
 }
 
 export default FAQS
+
+// import React from 'react'
+
+// const FAQS = () => {
+//   return (
+//     <div>
+//       <h1 style={{ color:"blck" }}>Hello</h1>
+//     </div>
+//   )
+// }
+
+// export default FAQS
+

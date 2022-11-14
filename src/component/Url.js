@@ -7,7 +7,8 @@ import Cards from './design/Cards';
 import Error404 from './design/Error404';
 
 import Memo from './design/Memo';
-import FAQ from './design/togole/FAQS';
+import FAQS from './design/togole/FAQS';
+
 import Togol from './design/togole/Togol';
 
 import Login from './login/Login';
@@ -35,7 +36,7 @@ import Welcome from './Welcome';
                 <Route path='/conditional' element={<Conditional />} />
                 <Route path='/alarm' element={<Alarm />} />
                 <Route path='/togole' element={<Togol />} />
-                <Route path='/faq' element={<FAQ />} />
+                <Route path='/faq' element={<FAQS />} />
                 {/* <Route path='/page' element={<Header />} /> */}
                 <Route path='/*' element={<Error404 />} />
               
