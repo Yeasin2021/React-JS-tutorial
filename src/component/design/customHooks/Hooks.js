@@ -6,7 +6,7 @@ const Hooks = () => {
   return (
     <div>
         <h1>Hooks</h1>
-        <button>Click</button>
+        <button style={{ background:"aqua" }} onClick={()=>setCount(count+1)}>Click</button>
     </div>
   )
 }
