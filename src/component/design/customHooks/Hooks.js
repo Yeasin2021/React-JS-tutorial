@@ -6,6 +6,7 @@ const Hooks = () => {
   return (
     <div>
         <h1>Hooks</h1>
+        <button>Click</button>
     </div>
   )
 }
