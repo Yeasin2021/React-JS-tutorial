@@ -1,8 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
+import CustomHooks from './CustomHooks';
 
 const Hooks = () => {
   const [count,setCount] = useState(0);
+  CustomHooks(count);
+
   return (
     <div>
         <h1>Hooks</h1>
