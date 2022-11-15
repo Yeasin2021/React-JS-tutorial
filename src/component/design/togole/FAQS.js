@@ -8,7 +8,7 @@ const FAQS = () => {
   return (
     <div>
         
-          <h1 style={{ color:"blck" }}>FAQS</h1>
+          <h1 style={{ color:"blck" }}>Frequently Asked Questions</h1>
           {
             faqs.map(faq => (
               <FAQ key={faq.id} {...faq} />

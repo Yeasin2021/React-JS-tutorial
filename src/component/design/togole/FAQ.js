@@ -13,14 +13,14 @@ const FAQ = ({id,title,description}) => {
     //   </div>
     // </article>
     <div className='container'>
-       <h1>Frequently Asked Questions</h1>
-        <details>
-            <summary>{title}?</summary>
+       
+        {/* <details> */}
+            <h1 style={{ color:"blck" }}>{title}?</h1>
             <button onClick={() => {setToggle(!toggle)}}>{toggle ? 'Show':'Hide'}</button>
             <div>
                 {toggle && <p>{description}</p>}
             </div>
-        </details>
+        {/* </details> */}
     </div>
   )
 }
