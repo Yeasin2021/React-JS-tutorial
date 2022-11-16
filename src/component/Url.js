@@ -5,6 +5,7 @@ import Alarm from './design/Alarm';
 // import Header from './design/bootstrap-page/Header';
 import Cards from './design/Cards';
 import Hooks from './design/customHooks/Hooks';
+import SmallLayoutScreen from './design/customHooks/SmallLayoutScreen';
 import Error404 from './design/Error404';
 
 import Memo from './design/Memo';
@@ -39,6 +40,7 @@ import Welcome from './Welcome';
                 <Route path='/togole' element={<Togol />} />
                 <Route path='/faq' element={<FAQS />} />
                 <Route path='/hooks' element={<Hooks />} />
+                <Route path='/hooks-2' element={<SmallLayoutScreen />} />
                 {/* <Route path='/page' element={<Header />} /> */}
                 <Route path='/*' element={<Error404 />} />
               
