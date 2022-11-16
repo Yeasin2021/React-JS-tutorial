@@ -5,6 +5,7 @@ import Alarm from './design/Alarm';
 // import Header from './design/bootstrap-page/Header';
 import Cards from './design/Cards';
 import Hooks from './design/customHooks/Hooks';
+import LargeLayoutScreen from './design/customHooks/LargeLayoutScreen';
 import SmallLayoutScreen from './design/customHooks/SmallLayoutScreen';
 import Error404 from './design/Error404';
 
@@ -41,6 +42,7 @@ import Welcome from './Welcome';
                 <Route path='/faq' element={<FAQS />} />
                 <Route path='/hooks' element={<Hooks />} />
                 <Route path='/hooks-2' element={<SmallLayoutScreen />} />
+                <Route path='/hooks-3' element={<LargeLayoutScreen />} />
                 {/* <Route path='/page' element={<Header />} /> */}
                 <Route path='/*' element={<Error404 />} />
               
