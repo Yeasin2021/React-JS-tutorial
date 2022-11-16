@@ -3,7 +3,7 @@ import useCustomHooks from './useCustomHooks'
 
 
 const LargeLayoutScreen = () => {
-  const onSmallScreen = useCustomHooks();
+  const onSmallScreen = useCustomHooks(768);
 
   return (
     <div className={onSmallScreen ? 'Small' : 'Large'}>

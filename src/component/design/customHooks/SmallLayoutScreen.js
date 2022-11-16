@@ -3,7 +3,7 @@ import useCustomHooks from './useCustomHooks'
 
 
 const SmallLayoutScreen = () => {
-  const onSmallScreen = useCustomHooks();
+  const onSmallScreen = useCustomHooks(600);
 
   return (
     <div>

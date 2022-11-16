@@ -1,16 +1,17 @@
 import React from 'react'
 import { useState,useEffect } from 'react';
-const useCustomHooks = () => {
+const useCustomHooks = (screenSize) => {
   // tracking state by useState hooks
   const [onSmallScreen,setOnSmallScreen] = useState(false);
-  const checkScreenSize = () =>{
-    setOnSmallScreen(window.innerWidth < 768);
-  }
+  
   useEffect(()=>{
+    const checkScreenSize = () =>{
+        setOnSmallScreen(window.innerWidth < screenSize);
+      }
     checkScreenSize();
     window.addEventListener("resize",checkScreenSize);
     return () => window.removeEventListener("resize",checkScreenSize);
-  },[]);
+  },[screenSize]);
 
  return onSmallScreen;
 
