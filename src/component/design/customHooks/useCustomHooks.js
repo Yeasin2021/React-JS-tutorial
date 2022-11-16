@@ -1,8 +1,6 @@
-
-
 import React from 'react'
-
-const UseCustomHooks = () => {
+import { useState,useEffect } from 'react';
+const useCustomHooks = () => {
   // tracking state by useState hooks
   const [onSmallScreen,setOnSmallScreen] = useState(false);
   const checkScreenSize = () =>{
@@ -15,7 +13,7 @@ const UseCustomHooks = () => {
   },[]);
 
  return onSmallScreen;
- 
+
 }
 
-export default UseCustomHooks
+export default useCustomHooks
