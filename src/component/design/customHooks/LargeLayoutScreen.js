@@ -1,16 +1,9 @@
 import React from 'react'
-import { useState,useEffect } from 'react';
+import useCustomHooks from './useCustomHooks'
+
 
 const LargeLayoutScreen = () => {
-    const [onSmallScreen,setOnSmallScreen] = useState(false);
-    const checkScreenSize = () =>{
-      setOnSmallScreen(window.innerWidth < 768);
-    }
-    useEffect(()=>{
-      checkScreenSize();
-      window.addEventListener("resize",checkScreenSize);
-      return () => window.removeEventListener("resize",checkScreenSize);
-    },[])
+  const onSmallScreen = useCustomHooks();
 
   return (
     <div className={onSmallScreen ? 'Small' : 'Large'}>
