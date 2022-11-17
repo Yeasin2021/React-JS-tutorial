@@ -2,6 +2,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route, Link  } from "react-router-dom";
 import Alarm from './design/Alarm';
+import CardBody from './design/bootstrap-page/CardBody';
 import Header from './design/bootstrap-page/Header';
 // import Header from './design/bootstrap-page/Header';
 import Cards from './design/Cards';
@@ -45,6 +46,7 @@ import Welcome from './Welcome';
                 <Route path='/hooks' element={<Hooks />} />
                 <Route path='/hooks-2' element={<SmallLayoutScreen />} />
                 <Route path='/hooks-3' element={<LargeLayoutScreen />} />
+                <Route path='/cardbody' element={<CardBody />} />
                 {/* <Route path='/page' element={<Header />} /> */}
                 <Route path='/*' element={<Error404 />} />
               

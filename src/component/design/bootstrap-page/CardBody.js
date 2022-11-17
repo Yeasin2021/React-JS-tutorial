@@ -6,13 +6,14 @@ const CardBody = () => {
     <div class="container text-center">
         <div class="row">
             <div class="col">
-                Column
+                
+               <img src='https://picsum.photos/200/300' alt='one'/>
             </div>
             <div class="col">
-                Column
+              <img src='https://picsum.photos/200/300' alt='two'/>
             </div>
             <div class="col">
-                Column
+              <img src='https://picsum.photos/200/300' alt='three'/>
             </div>
         </div>
     </div>
