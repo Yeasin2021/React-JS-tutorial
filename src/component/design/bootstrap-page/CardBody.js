@@ -10,7 +10,7 @@ const CardBody = () => {
                     <img src="https://picsum.photos/200/300" className="card-img-top" alt="..." height='300px'/>
                     <div className="card-body">
                         <h5 className="card-title">Card title</h5>
-                        <p className="card-text text-dark">What is Lorem Ipsum?
+                        <p className="card-text text-dark" style={{ textAlign: 'justify',fontSize:'13px' }}>What is Lorem Ipsum?
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
                             standard dummy text ever since the 1500s, 
                             when an unknown printer took a galley of 
@@ -30,7 +30,7 @@ const CardBody = () => {
                     <img src="https://picsum.photos/200/300" className="card-img-top" alt="..." height='300px'/>
                     <div className="card-body">
                         <h5 className="card-title">Card title</h5>
-                        <p className="card-text text-dark">What is Lorem Ipsum?
+                        <p className="card-text text-dark" style={{ textAlign: 'justify',fontSize:'13px' }}>What is Lorem Ipsum?
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
                             standard dummy text ever since the 1500s, 
                             when an unknown printer took a galley of 
@@ -50,7 +50,7 @@ const CardBody = () => {
                     <img src="https://picsum.photos/200/300" className="card-img-top" alt="..." height='300px'/>
                     <div className="card-body">
                         <h5 className="card-title">Card title</h5>
-                        <p className="card-text text-dark">What is Lorem Ipsum?
+                        <p className="card-text text-dark" style={{ textAlign: 'justify',fontSize:'13px' }}>What is Lorem Ipsum?
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
                             standard dummy text ever since the 1500s, 
                             when an unknown printer took a galley of 
