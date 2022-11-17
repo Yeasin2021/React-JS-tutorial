@@ -3,32 +3,42 @@ import React from 'react'
 const CardBody = () => {
   return (
     <div>
-    <div class="container text-center">
-        <div class="row">
-            <div class="col">
-                <h5>
-                    Loream Ipsum
-                    <small className="text-muted" style={{ marginLeft:'10px' }}>Image</small>
-                </h5>
-               <img src='https://picsum.photos/200/300' alt='one'/>
+    <div className="container text-center">
+        <div className="row">
+            <div className="col">
+                <div className="card" style={{ width: "18rem;" }}>
+                    <img src="..." className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">Card title</h5>
+                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" className="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
             </div>
-            <div class="col">
-                <h5>
-                    Loream Ipsum
-                    <small className="text-muted" style={{ marginLeft:'10px' }}>Image</small>
-                </h5>
-              <img src='https://picsum.photos/200/300' alt='two'/>
+            <div className="col">
+                <div className="card" style={{ width: "18rem;" }}>
+                    <img src="..." className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">Card title</h5>
+                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" className="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
             </div>
-            <div class="col">
-                <h5>
-                    Loream Ipsum
-                    <small className="text-muted" style={{ marginLeft:'10px' }}>Image</small>
-                </h5>
-              <img src='https://picsum.photos/200/300' alt='three'/>
+            <div className="col">
+                <div className="card" style={{ width: "18rem;" }}>
+                    <img src="..." className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">Card title</h5>
+                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" className="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
   )
 }
 
