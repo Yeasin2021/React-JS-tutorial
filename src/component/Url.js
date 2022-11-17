@@ -2,6 +2,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route, Link  } from "react-router-dom";
 import Alarm from './design/Alarm';
+import Header from './design/bootstrap-page/Header';
 // import Header from './design/bootstrap-page/Header';
 import Cards from './design/Cards';
 import Hooks from './design/customHooks/Hooks';
@@ -26,8 +27,9 @@ import Welcome from './Welcome';
  const Url = () => {
   return (
     <div>
-      
+  
         <BrowserRouter>
+        
             <Routes>
                 <Route path='/' element={<Welcome />} />
                 <Route path='/login' element={<Login />} />
