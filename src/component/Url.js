@@ -15,6 +15,7 @@ import Memo from './design/Memo';
 import FAQS from './design/togole/FAQS';
 
 import Togol from './design/togole/Togol';
+import Count from './design/tutorial/Count';
 
 import Login from './login/Login';
 import Conditional from './others/Conditional';
@@ -47,6 +48,7 @@ import Welcome from './Welcome';
                 <Route path='/hooks-2' element={<SmallLayoutScreen />} />
                 <Route path='/hooks-3' element={<LargeLayoutScreen />} />
                 <Route path='/cardbody' element={<CardBody />} />
+                <Route path='/Count' element={<Count />} />
                 {/* <Route path='/page' element={<Header />} /> */}
                 <Route path='/*' element={<Error404 />} />
               
