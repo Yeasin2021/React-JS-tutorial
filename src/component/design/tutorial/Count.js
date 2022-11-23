@@ -4,7 +4,11 @@ import { useState, useEffect } from 'react'
 const Count = () => {
 const [count,setCount] = useState(0);
 
+useEffect(()=>{
     document.title = `Click ${count} times`;
+});
+
+    // document.title = `Click ${count} times`;
 
   return (
     <div>
