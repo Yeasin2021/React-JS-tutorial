@@ -15,7 +15,7 @@ const slider = () => {
     // <div>
     //   <h1 style={{ color:"red" }}>React Slider Component </h1>
     // </div>
-    <div style={{ marginTop: '50px' }}>
+    <div style={{ marginTop: '50px',backgroundColor:'red', width:'600px', height:'600px' }}>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -30,7 +30,9 @@ const slider = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>
+            <img src='./img/testimonials-1.jpg' />
+        </SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
