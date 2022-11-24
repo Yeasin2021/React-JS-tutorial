@@ -9,13 +9,18 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import "./slider.css";
+import One from './img/testimonials-1.jpg'
+import Two from './img/testimonials-2.jpg'
+import Three from './img/testimonials-3.jpg'
+import Four from './img/testimonials-4.jpg'
+import Five from './img/testimonials-5.jpg'
 
 const slider = () => {
   return (
     // <div>
     //   <h1 style={{ color:"red" }}>React Slider Component </h1>
     // </div>
-    <div style={{ marginTop: '50px',backgroundColor:'red', width:'600px', height:'600px' }}>
+    <div style={{ marginTop: '50px', width:'600px', height:'600px' }}>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -31,16 +36,20 @@ const slider = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-            <img src='./img/testimonials-1.jpg' />
+            <img src={One} alt="testimonials-1"/>
         </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide>
+            <img src={Two} alt="testimonials-2"/>
+        </SwiperSlide>
+        <SwiperSlide>
+            <img src={Three} alt="testimonials-3"/>
+        </SwiperSlide>
+        <SwiperSlide>
+            <img src={Four} alt="testimonials-4"/>
+        </SwiperSlide>
+        <SwiperSlide>
+            <img src={Five} alt="testimonials-5"/>
+        </SwiperSlide>
       </Swiper>
     </div>
   )
