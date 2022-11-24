@@ -9,6 +9,7 @@ import Cards from './design/Cards';
 import Hooks from './design/customHooks/Hooks';
 import LargeLayoutScreen from './design/customHooks/LargeLayoutScreen';
 import SmallLayoutScreen from './design/customHooks/SmallLayoutScreen';
+import Slider from './design/slider/Slider';
 import Error404 from './design/Error404';
 
 import Memo from './design/Memo';
@@ -49,6 +50,8 @@ import Welcome from './Welcome';
                 <Route path='/hooks-3' element={<LargeLayoutScreen />} />
                 <Route path='/cardbody' element={<CardBody />} />
                 <Route path='/Count' element={<Count />} />
+                <Route path='/slider' element={<Slider />} />
+                
                 {/* <Route path='/page' element={<Header />} /> */}
                 <Route path='/*' element={<Error404 />} />
               
