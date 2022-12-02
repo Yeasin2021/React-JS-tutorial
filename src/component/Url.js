@@ -24,6 +24,7 @@ import Child from './state_lefting/Child';
 import Parent from './state_lefting/Parent';
 import Home from './todos/Home';
 import Welcome from './Welcome';
+import Data from './fetch_curd/data';
 
 
 
@@ -51,6 +52,7 @@ import Welcome from './Welcome';
                 <Route path='/cardbody' element={<CardBody />} />
                 <Route path='/Count' element={<Count />} />
                 <Route path='/slider' element={<Slider />} />
+                <Route path='/data-table' element={<Data />} />
                 
                 {/* <Route path='/page' element={<Header />} /> */}
                 <Route path='/*' element={<Error404 />} />

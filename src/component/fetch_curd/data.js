@@ -1,6 +1,6 @@
 import React from 'react'
 
-const data = () => {
+const Data = () => {
   return (
     <div>
       <h>This is data tabele</h>
@@ -8,4 +8,4 @@ const data = () => {
   )
 }
 
-export default data
+export default Data
