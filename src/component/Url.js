@@ -24,7 +24,7 @@ import Child from './state_lefting/Child';
 import Parent from './state_lefting/Parent';
 import Home from './todos/Home';
 import Welcome from './Welcome';
-import Data from './fetch_curd/data';
+import Data from './fetch_curd/Data';
 
 
 
