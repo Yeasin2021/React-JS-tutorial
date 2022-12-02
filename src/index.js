@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+// import './index.css';
 import App from './App';
+import Data from './component/fetch_curd/Data';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -11,6 +12,7 @@ root.render(
   <React.StrictMode>
     {/* <Header /> */}
     <App />
+    {/* <Data /> */}
   </React.StrictMode>
 );
 
