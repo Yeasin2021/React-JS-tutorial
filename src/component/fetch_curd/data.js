@@ -33,16 +33,25 @@ useEffect(()=>{
     </tr>
   </thead>
   <tbody>
-    <tr style={{ textAlign:"center" }}>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto@mail.com</td>
-      <td>01457890</td>
-      <td>
-        <a><button className='btn btn-primary'><i class="bi bi-pencil-square"></i></button></a>
-        <a><button className='btn btn-danger'><i class="bi bi-trash "></i></button></a>
-      </td>
-    </tr>
+  {
+        items && items.map((item,index)=>(
+          
+            
+               <tr style={{ textAlign:"center" }}>
+                <th scope="row">{item.id}</th>
+                <td>{item.name}</td>
+                <td>{item.email}</td>
+                <td>{item.phone}</td>
+                <td>
+                  <a><button className='btn btn-primary'><i class="bi bi-pencil-square"></i></button></a>
+                  <a><button className='btn btn-danger'><i class="bi bi-trash "></i></button></a>
+                </td>
+            </tr>
+          
+        
+        ))
+      }
+   
   </tbody>
 </table>
     </div>
