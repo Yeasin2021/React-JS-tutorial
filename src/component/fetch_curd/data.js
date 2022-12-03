@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react'
+import { Link } from "react-router-dom";
 
 const Data = () => {
 const tables = {
@@ -33,10 +34,8 @@ useEffect(()=>{
     </tr>
   </thead>
   <tbody>
-  {
+      {
         items && items.map((item,index)=>(
-          
-            
                <tr style={{ textAlign:"center" }}>
                 <th scope="row">{item.id}</th>
                 <td>{item.name}</td>
@@ -47,11 +46,8 @@ useEffect(()=>{
                   <a><button className='btn btn-danger'><i class="bi bi-trash "></i></button></a>
                 </td>
             </tr>
-          
-        
         ))
       }
-   
   </tbody>
 </table>
     </div>
