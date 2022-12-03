@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 
 const Data = () => {
 const tables = {
@@ -10,6 +10,16 @@ const tables = {
     margin:"0 auto",
     marginTop:"50px"
 }
+
+const [items,setItems] = useState(null);
+useEffect(()=>{
+    const url = " http://localhost:8000/students";
+    fetch(url)
+    .then((res)=>{return res.json()})
+    .then(data=> setItems(data))
+},[])
+
+
   return (
     <div style={tables} className="tables">
       <table class="table">
