@@ -23,7 +23,7 @@ const tables = {
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr style={{ textAlign:"center" }}>
       <th scope="row">1</th>
       <td>Mark</td>
       <td>Otto@mail.com</td>
