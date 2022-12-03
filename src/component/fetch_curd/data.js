@@ -14,7 +14,7 @@ const tables = {
     <div style={tables} className="tables">
       <table class="table">
   <thead>
-    <tr>
+    <tr style={{ textAlign:"center" }}>
       <th scope="col">Id</th>
       <th scope="col">Name</th>
       <th scope="col">Email</th>
