@@ -27,14 +27,10 @@ const FormData = () => {
     navigate("/data-table");
   }
 
-  // const id = () =>{
-  //   return Math.floor(Math.random() * 100) + 1;
-  // }
 
   return (
     <div style={{display:"flex",justifyContent:"center", marginTop:"200px", margin:"auto"}}>
       <form onSubmit={formHandler} role="form">
-        <input type="hidden"/>
           <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label">Name</label>
             <input type="text" className="form-control" value={name} name='name' onChange={(e)=>setName(e.target.value)}/>
