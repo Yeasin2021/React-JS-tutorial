@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import { useNavigate } from "react-router-dom";
+import { v4 as uuid } from 'uuid';
 
 
 
@@ -7,8 +8,9 @@ const FormData = () => {
   const [name,setName] = useState("");
   const [email,setEmail] = useState("");
   const [phone,setPhone] = useState("");
+  // const [id,setId] = useState("");
   const navigate = useNavigate();
-  // const [id,setId] = useState((_.uniqueId("prefix-")));
+  
   const data = {name,email,phone};
 
   // useEffect(()=>{
@@ -26,27 +28,30 @@ const FormData = () => {
       
   // },[])
 
-  // const idGn = (id) =>{
-  //   id = Math.random().toString(36).slice(2);
-  // }
+  
 
   const formHandler = (e) =>{
     e.preventDefault();
     fetch("http://localhost:8000/students",{
     method: "POST",
     headers:{
-      "content-type":"application/json"
+      "Content-Type":"application/json"
     },
     body: JSON.stringify(data)
   })
-  .catch(error=>{alert(error)});
+  .then((response)=>{console.warn("Result",response)})
+  .catch(error=>console.warn("Have Some Error: "+error))
     navigate("/data-table");
   }
 
+  // const id = () =>{
+  //   return Math.floor(Math.random() * 100) + 1;
+  // }
+
   return (
     <div style={{display:"flex",justifyContent:"center", marginTop:"200px", margin:"auto"}}>
-      <form onSubmit={formHandler}>
-        {/* <input type="hidden"  onChange={()=>{idGn(id)}}/> */}
+      <form onSubmit={formHandler} role="form">
+        <input type="hidden"/>
           <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label">Name</label>
             <input type="text" className="form-control" value={name} name='name' onChange={(e)=>setName(e.target.value)}/>

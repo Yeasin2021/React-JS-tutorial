@@ -1,7 +1,7 @@
 {
   "students": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Yeasin Hossain",
       "email": "yeasin18801@gmail.com",
       "phone": "01631916786"
@@ -10,25 +10,13 @@
       "name": "Momenur",
       "email": "momenur@gmail.com",
       "phone": "01866351719",
-      "id": "J3Hs8h4"
+      "id": 2
     },
     {
-      "name": "Yeasin Miah",
-      "email": "yeasin18801@gmail.com",
-      "phone": "01631916786",
-      "id": "rCLJKCd"
-    },
-    {
-      "name": "Momenur",
-      "email": "yeasindeveloper@gmail.com",
+      "name": "Monika ",
+      "email": "momi@mailer.com",
       "phone": "01724660650",
-      "id": "vQ9Yw1L"
-    },
-    {
-      "name": "Yeasin Hossain",
-      "email": "momenur@gmail.com",
-      "phone": "01631916786",
-      "id": "2qGQBfk"
+      "id": 3
     }
   ],
   "posts": [
