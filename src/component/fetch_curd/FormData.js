@@ -13,23 +13,6 @@ const FormData = () => {
   
   const data = {name,email,phone};
 
-  // useEffect(()=>{
-  //   const formHandler = (e) =>{
-  //       e.preventDefault();
-  //       fetch("http://localhost:8000/students",{
-  //       method: "POST",
-  //       headers:{
-  //         "content-type":"application/json"
-  //       },
-  //       body: JSON.stringify(data)
-  //     })
-  //     .catch(error=>{alert(error)})
-  //     }
-      
-  // },[])
-
-  
-
   const formHandler = (e) =>{
     e.preventDefault();
     fetch("http://localhost:8000/students",{
