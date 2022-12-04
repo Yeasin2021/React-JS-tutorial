@@ -26,6 +26,7 @@ import Home from './todos/Home';
 import Welcome from './Welcome';
 import Data from './fetch_curd/Data';
 import FormData from './fetch_curd/FormData';
+import Edit from './fetch_curd/Edit';
 
 
 
@@ -55,6 +56,7 @@ import FormData from './fetch_curd/FormData';
                 <Route path='/slider' element={<Slider />} />
                 <Route path='/data-table' element={<Data />} />
                 <Route path='/form' element={<FormData />} />
+                <Route path='/form-edit' element={<Edit />} />
                 
                 {/* <Route path='/page' element={<Header />} /> */}
                 <Route path='/*' element={<Error404 />} />
