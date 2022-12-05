@@ -29,15 +29,6 @@ const Edit = () => {
           body:JSON.stringify(input)
 
         })
-        .then((response)=>{ 
-          if(response.state == 200)
-          {
-            alert("Data Updated Successfully......");
-          }else{
-            alert("Something is problem");
-          }
-          // console.warn(response)
-        })
         .catch(error => {console.log(error)})
          navigate("/data-table");
       }
