@@ -22,13 +22,17 @@ useEffect(()=>{
     fetch(url)
     .then((res)=>{return res.json()})
     .then(data=> setItems(data))
-},[render])
+},[])
 
 
 const deleteData = (id) =>{
   const url = `http://localhost:8000/students/${id}`;
   fetch(url,{method:"DELETE"}).catch(error=>console.log(error));
-  setRender(true);
+  const newItems = items.filter((item)=>{
+    return item.id !== id;
+  });
+  setItems(newItems);
+  // setRender(true);
   //navigate("/data-table");
 
 }
