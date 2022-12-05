@@ -19,26 +19,26 @@ const Edit = () => {
             .then(data=> {setInput(data);console.log(data)})
         },[id])
 
-      // const update = (e) =>{
-      //   e.preventDefault();
-      //   fetch(`http://localhost:8000/students/${id}`,{
-      //     method : "PUT",
-      //     headers:{
-      //       "content-type" : "application/json"
-      //     },
-      //     body : JSON.stringify(input)
-      //   })
-      //   .then((response)=>{
-      //     if(response.state == 200)
-      //     {
-      //       alert("Data Updated Successfully......");
-      //     }else{
-      //       alert("Something is problem");
-      //     }
-      //   })
-      //   .catch(error => {console.log(error)})
-      //   navigate("/data-table");
-      // }
+      const update = (e) =>{
+        e.preventDefault();
+        fetch(`http://localhost:8000/students/${id}`,{
+          method : "PUT",
+          headers:{
+            "content-type" : "application/json"
+          },
+          body : JSON.stringify(input)
+        })
+        .then((response)=>{
+          if(response.state == 200)
+          {
+            alert("Data Updated Successfully......");
+          }else{
+            alert("Something is problem");
+          }
+        })
+        .catch(error => {console.log(error)})
+        navigate("/data-table");
+      }
 
     return (
         <div style={{display:"flex",justifyContent:"center", marginTop:"200px", margin:"auto"}}>
