@@ -55,7 +55,7 @@ const deleteData = (id) =>{
                 <td>{item.phone}</td>
                 <td>
                   <Link to={`/form-edit/${item.id}`}><button className='btn btn-primary'><i class="bi bi-pencil-square"></i></button></Link>
-                  <button onClick={()=>deleteData(item.id)} className='btn btn-danger'><i class="bi bi-trash "></i></button>
+                  <button onClick={()=>deleteData(item.id)} className='btn btn-danger' style={{ marginLeft:'10px' }}><i class="bi bi-trash"></i></button>
                 </td>
             </tr>
         ))
