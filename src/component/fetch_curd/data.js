@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
-import { Link } from "react-router-dom";
+import { Link,useParams } from "react-router-dom";
+
 
 const Data = () => {
 const tables = {
@@ -12,6 +13,7 @@ const tables = {
     marginTop:"50px"
 }
 
+const params = useParams();
 const [items,setItems] = useState(null);
 useEffect(()=>{
     const url = " http://localhost:8000/students";
@@ -43,7 +45,7 @@ useEffect(()=>{
                 <td>{item.email}</td>
                 <td>{item.phone}</td>
                 <td>
-                  <a><button className='btn btn-primary'><i class="bi bi-pencil-square"></i></button></a>
+                  <Link to={`/form-edit/${item.id}`}><button className='btn btn-primary'><i class="bi bi-pencil-square"></i></button></Link>
                   <a><button className='btn btn-danger'><i class="bi bi-trash "></i></button></a>
                 </td>
             </tr>
