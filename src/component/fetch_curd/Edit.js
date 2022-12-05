@@ -12,12 +12,12 @@ const Edit = () => {
         }
         );
   
-        // useEffect(()=>{
-        //     const url = `http://localhost:8000/students/${id}`;
-        //     fetch(url)
-        //     .then((res)=>{return res.json()})
-        //     .then(data=> {setInput(data);console.log(data)})
-        // },[id])
+        useEffect(()=>{
+            const url = `http://localhost:8000/students/${id}`;
+            fetch(url)
+            .then((res)=>{return res.json()})
+            .then(data=> {setInput(data);console.log(data)})
+        },[id])
 
       // const update = (e) =>{
       //   e.preventDefault();
