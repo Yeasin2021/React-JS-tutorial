@@ -14,8 +14,6 @@ const tables = {
 }
 
 const {id} = useParams();
-const navigate = useNavigate();
-const [render, setRender] = useState(false);
 const [items,setItems] = useState(null);
 useEffect(()=>{
     const url = " http://localhost:8000/students";
