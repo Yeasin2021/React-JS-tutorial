@@ -37,8 +37,8 @@ const Edit = () => {
         <div style={{display:"flex",justifyContent:"center", marginTop:"200px", margin:"auto"}}>
           <form onSubmit={update}>
               <div className="mb-3">
-                <label htmlFor="exampleInputEmail1" className="form-label" >Name</label>
-                <input type="text" className="form-control" name='name' value={input.name} onChange={(e)=> {setInput({...input,[e.target.name]:e.target.value})}}/>
+                <label htmlFor="exampleInputEmail1" className="form-label">Name</label>
+                <input type="text" style={{ color:'blck' }} className="form-control" name='name' value={input.name} onChange={(e)=> {setInput({...input,[e.target.name]:e.target.value})}}/>
               </div>
               <div className="mb-3">
                 <label htmlFor="exampleInputEmail1" className="form-label">Mail</label>
