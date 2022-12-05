@@ -32,9 +32,6 @@ const deleteData = (id) =>{
     return item.id !== id;
   });
   setItems(newItems);
-  // setRender(true);
-  //navigate("/data-table");
-
 }
 
   return (
