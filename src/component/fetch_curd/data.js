@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import { Link,useParams } from "react-router-dom";
+import { Link,useParams,useNavigate } from "react-router-dom";
 
 
 const Data = () => {
@@ -13,15 +13,25 @@ const tables = {
     marginTop:"50px"
 }
 
-const params = useParams();
+const {id} = useParams();
+const navigate = useNavigate();
+const [render, setRender] = useState(false);
 const [items,setItems] = useState(null);
 useEffect(()=>{
     const url = " http://localhost:8000/students";
     fetch(url)
     .then((res)=>{return res.json()})
     .then(data=> setItems(data))
-},[])
+},[render])
 
+
+const deleteData = (id) =>{
+  const url = `http://localhost:8000/students/${id}`;
+  fetch(url,{method:"DELETE"}).catch(error=>console.log(error));
+  setRender(true);
+  //navigate("/data-table");
+
+}
 
   return (
     <div style={tables} className="tables">
@@ -46,7 +56,7 @@ useEffect(()=>{
                 <td>{item.phone}</td>
                 <td>
                   <Link to={`/form-edit/${item.id}`}><button className='btn btn-primary'><i class="bi bi-pencil-square"></i></button></Link>
-                  <a><button className='btn btn-danger'><i class="bi bi-trash "></i></button></a>
+                  <button onClick={()=>deleteData(item.id)} className='btn btn-danger'><i class="bi bi-trash "></i></button>
                 </td>
             </tr>
         ))

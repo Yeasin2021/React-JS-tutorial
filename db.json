@@ -1,22 +1,3 @@
 {
-  "students": [
-    {
-      "id": 1,
-      "name": "Yeasin Hossainsss",
-      "email": "yeasin@gmail.com",
-      "phone": "01631916786"
-    },
-    {
-      "name": "Momenur",
-      "email": "momenur@gmail.com",
-      "phone": "01866351719",
-      "id": 2
-    },
-    {
-      "name": "Monika ",
-      "email": "momi@mailer.com",
-      "phone": "01724660650",
-      "id": 3
-    }
-  ]
+  "students": []
 }

@@ -27,7 +27,7 @@ const Edit = () => {
             'content-type':'application/json'
           },
           body:JSON.stringify(input)
-          // body:{input}
+
         })
         .then((response)=>{ 
           if(response.state == 200)
