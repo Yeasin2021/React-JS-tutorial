@@ -16,28 +16,30 @@ const Edit = () => {
             const url = `http://localhost:8000/students/${id}`;
             fetch(url)
             .then((res)=>{return res.json()})
-            .then(data=> {setInput(data);console.log(data)})
-        },[id])
+            .then(data=> {setInput(data)})
+        },[])
 
       const update = (e) =>{
         e.preventDefault();
         fetch(`http://localhost:8000/students/${id}`,{
-          method : "PUT",
+          method:'PUT',
           headers:{
-            "content-type" : "application/json"
+            'content-type':'application/json'
           },
-          body : JSON.stringify(input)
+          body:JSON.stringify(input)
+          // body:{input}
         })
-        .then((response)=>{
+        .then((response)=>{ 
           if(response.state == 200)
           {
             alert("Data Updated Successfully......");
           }else{
             alert("Something is problem");
           }
+          // console.warn(response)
         })
         .catch(error => {console.log(error)})
-        navigate("/data-table");
+         navigate("/data-table");
       }
 
     return (
@@ -45,15 +47,15 @@ const Edit = () => {
           <form onSubmit={update}>
               <div className="mb-3">
                 <label htmlFor="exampleInputEmail1" className="form-label" >Name</label>
-                <input type="text" className="form-control" value={input.name} onChange={(e)=> setInput(e.target.value)}/>
+                <input type="text" className="form-control" name='name' value={input.name} onChange={(e)=> {setInput({...input,[e.target.name]:e.target.value})}}/>
               </div>
               <div className="mb-3">
                 <label htmlFor="exampleInputEmail1" className="form-label">Mail</label>
-                <input type="text" className="form-control" value={input.email}  onChange={(e)=> setInput(e.target.value)}/>
+                <input type="text" className="form-control" name='email' value={input.email}  onChange={(e)=> {setInput({...input,[e.target.name]:e.target.value})}}/>
               </div>
               <div className="mb-3">
                 <label htmlFor="exampleInputEmail1" className="form-label">Phone</label>
-                <input type="text" className="form-control" value={input.phone}  onChange={(e)=> setInput(e.target.value)}/>
+                <input type="text" className="form-control" name='phone' value={input.phone}  onChange={(e)=> {setInput({...input,[e.target.name]:e.target.value})}}/>
               </div>
               <button type="submit" className="btn btn-primary">Submit</button>
             </form>
