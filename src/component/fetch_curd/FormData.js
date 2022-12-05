@@ -8,7 +8,6 @@ const FormData = () => {
   const [name,setName] = useState("");
   const [email,setEmail] = useState("");
   const [phone,setPhone] = useState("");
-  // const [id,setId] = useState("");
   const navigate = useNavigate();
   
   const data = {name,email,phone};
