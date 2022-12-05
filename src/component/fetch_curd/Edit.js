@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
 const Edit = () => {
-  // const {id} = useParams();
+  const {id} = useParams();
   const navigate = useNavigate();
     const [input, setInput] = useState(
         {
