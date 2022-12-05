@@ -56,10 +56,12 @@ import { useParams } from 'react-router-dom';
                 <Route path='/Count' element={<Count />} />
                 <Route path='/slider' element={<Slider />} />
                 
+                {/* fetch api curd start */}
                 <Route path='/data-table' element={<Data />} />
                 <Route path='/form' element={<FormData />} />
                 <Route path="/form-edit/:id" element={<Edit />} />
-                
+                 {/* fetch api curd end */}
+
                 {/* <Route path='/page' element={<Header />} /> */}
                 <Route path='/*' element={<Error404 />} />
               
