@@ -37,7 +37,7 @@ const deleteData = (id) =>{
     <div style={tables} className="tables">
       <table class="table">
   <thead>
-    <tr><button className='btn btn-primary' style={{ color:"white" }}><Link to="/form" style={{ textDecoration:"none" }}>Create</Link></button></tr>
+    <tr><button style={{ backgroundColor:"blue" }}><Link to="/form" style={{ textDecoration:"none",color:"white" }}>Create</Link></button></tr>
     <tr style={{ textAlign:"center" }}>
       <th scope="col">Id</th>
       <th scope="col">Name</th>
