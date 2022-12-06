@@ -24,13 +24,16 @@ useEffect(()=>{
 
 
 const deleteData = (id) =>{
-  alert("Do You Want This Item ? ");
-  const url = `http://localhost:8000/students/${id}`;
-  fetch(url,{method:"DELETE"}).catch(error=>console.log(error));
-  const newItems = items.filter((item)=>{
-    return item.id !== id;
-  });
-  setItems(newItems);
+  const action = window.confirm("Do You Want This Item ? ");
+  if(action){
+    const url = `http://localhost:8000/students/${id}`;
+    fetch(url,{method:"DELETE"}).catch(error=>console.log(error));
+    const newItems = items.filter((item)=>{
+      return item.id !== id;
+    });
+    setItems(newItems);
+  }
+  
 }
 
   return (
