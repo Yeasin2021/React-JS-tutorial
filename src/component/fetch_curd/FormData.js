@@ -11,7 +11,7 @@ const FormData = () => {
   const [phone,setPhone] = useState("");
   // use navigate for return route 
   const navigate = useNavigate();
-  
+  // object assign 
   const data = {name,email,phone};
 
   const formHandler = (e) =>{
