@@ -11,6 +11,7 @@ const Edit = () => {
           phone:""
         }
         );
+        // data show on form by id with hooks
         useEffect(()=>{
             const url = `http://localhost:8000/students/${id}`;
             fetch(url)
