@@ -9,6 +9,7 @@ const FormData = () => {
   const [name,setName] = useState("");
   const [email,setEmail] = useState("");
   const [phone,setPhone] = useState("");
+  // use navigate for return route 
   const navigate = useNavigate();
   
   const data = {name,email,phone};
