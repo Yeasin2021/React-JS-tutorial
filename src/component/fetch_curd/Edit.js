@@ -11,7 +11,6 @@ const Edit = () => {
           phone:""
         }
         );
-  
         useEffect(()=>{
             const url = `http://localhost:8000/students/${id}`;
             fetch(url)

@@ -3,6 +3,7 @@ import { Link,useParams } from "react-router-dom";
 
 
 const Data = () => {
+// adding css style 
 const tables = {
     display: "flex",
     justifyContent: "center",
@@ -13,7 +14,7 @@ const tables = {
     marginTop:"50px"
 }
 
-const {id} = useParams();
+
 const [items,setItems] = useState(null);
 useEffect(()=>{
     const url = " http://localhost:8000/students";
@@ -22,7 +23,7 @@ useEffect(()=>{
     .then(data=> setItems(data))
 },[])
 
-
+const {id} = useParams();
 const deleteData = (id) =>{
   const action = window.confirm("Do You Want This Item ? ");
   if(action){
