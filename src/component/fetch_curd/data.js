@@ -30,6 +30,7 @@ const deleteData = (id) =>{
   if(action){
     const url = `http://localhost:8000/students/${id}`;
     fetch(url,{method:"DELETE"}).catch(error=>console.log(error));
+    // data filtering and show data without delete data
     const newItems = items.filter((item)=>{
       return item.id !== id;
     });
