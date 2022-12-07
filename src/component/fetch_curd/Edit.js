@@ -19,6 +19,7 @@ const Edit = () => {
             .then(data=> {setInput(data)})
         },[])
 
+        // data update by id
       const update = (e) =>{
         e.preventDefault();
         fetch(`http://localhost:8000/students/${id}`,{
