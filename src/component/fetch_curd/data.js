@@ -14,7 +14,7 @@ const tables = {
     marginTop:"50px"
 }
 
-
+// data show on table by hooks
 const [items,setItems] = useState(null);
 useEffect(()=>{
     const url = " http://localhost:8000/students";
