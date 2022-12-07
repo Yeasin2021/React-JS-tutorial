@@ -23,6 +23,7 @@ useEffect(()=>{
     .then(data=> setItems(data))
 },[])
 
+// data delete by id and use useParams hooks
 const {id} = useParams();
 const deleteData = (id) =>{
   const action = window.confirm("Do You Want This Item ? ");
