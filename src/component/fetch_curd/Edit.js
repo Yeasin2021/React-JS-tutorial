@@ -4,6 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 const Edit = () => {
   const {id} = useParams();
   const navigate = useNavigate();
+  // object assign into hooks
     const [input, setInput] = useState(
         {
           name:"",
