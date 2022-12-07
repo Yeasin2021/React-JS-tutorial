@@ -13,7 +13,7 @@ const FormData = () => {
   const navigate = useNavigate();
   // object assign 
   const data = {name,email,phone};
-
+// data store by form
   const formHandler = (e) =>{
     e.preventDefault();
     fetch("http://localhost:8000/students",{
