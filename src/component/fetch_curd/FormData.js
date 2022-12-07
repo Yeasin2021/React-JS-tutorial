@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 
 const FormData = () => {
+  // intial data store into hooks 
   const [name,setName] = useState("");
   const [email,setEmail] = useState("");
   const [phone,setPhone] = useState("");
