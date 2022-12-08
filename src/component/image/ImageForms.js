@@ -7,7 +7,7 @@ const inputImage = (e) =>{
 }
 const formSubmit = (e) =>{
     e.preventDefault();
-    
+    fetch()
 }
   return (
     <div>
