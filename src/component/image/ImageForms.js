@@ -3,7 +3,12 @@ import React from 'react'
 const ImageForms = () => {
   return (
     <div>
-      <h1>Hello</h1>
+      <form>
+        <div className="form-group">
+            <label for="exampleFormControlFile1">Example file input</label>
+            <input type="file" className="form-control-file" id="exampleFormControlFile1" />
+        </div>
+    </form>
     </div>
   )
 }
