@@ -28,7 +28,7 @@ import Data from './fetch_curd/Data';
 import FormData from './fetch_curd/FormData';
 import Edit from './fetch_curd/Edit';
 import { useParams } from 'react-router-dom';
-import Form from './image/Form';
+import ImageForms from './image/ImageForms';
 
 
  const Url = () => {
@@ -62,7 +62,7 @@ import Form from './image/Form';
                 <Route path='/form' element={<FormData />} />
                 <Route path="/form-edit/:id" element={<Edit />} />
                  {/* fetch api curd end */}
-                <Route path='/image-form' element={Form} />
+                <Route path='/image-form' element={<ImageForms />} />
                 {/* <Route path='/page' element={<Header />} /> */}
                 <Route path='/*' element={<Error404 />} />
               
