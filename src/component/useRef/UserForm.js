@@ -1,9 +1,12 @@
 import React from 'react'
 
 const UserForm = () => {
+const colors = {color:"red"}
   return (
     <div>
-      <h1>UseRef</h1>
+      <form>
+            <h1 style={colors}>User name</h1>
+      </form>
     </div>
   )
 }
