@@ -6,6 +6,7 @@ const userNameRef = useRef();
 const handaleSubmit = (event) =>{
     event.preventDefault();
     const userName = userNameRef.current.value;
+    userNameRef.current.style.color = "green";
     console.log(userName);
 }
   return (
