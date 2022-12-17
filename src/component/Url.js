@@ -30,6 +30,8 @@ import Edit from './fetch_curd/Edit';
 import { useParams } from 'react-router-dom';
 import ImageForms from './image/ImageForms';
 import UserForm from './useRef/UserForm';
+import BarCharts from './chart/BarCharts';
+
 
 
  const Url = () => {
@@ -65,6 +67,8 @@ import UserForm from './useRef/UserForm';
                  {/* fetch api curd end */}
                 <Route path='/image-form' element={<ImageForms />} />
                 <Route path='/userref' element={<UserForm />} />
+                <Route path='/chart' element={<BarCharts />} />
+                
                 {/* <Route path='/page' element={<Header />} /> */}
                 <Route path='/*' element={<Error404 />} />
               
