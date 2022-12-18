@@ -150,7 +150,7 @@ const BarCharts = () => {
         ]; 
        
         
-        console.log(easy)
+        // console.log(easy)
       }
 
       const useMedium = () =>{
