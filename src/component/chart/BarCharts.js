@@ -163,7 +163,7 @@ const BarCharts = () => {
         ]; 
         
         
-        console.log(valueMedium)
+        // console.log(valueMedium)
       }
       const useHard = () =>{
        
