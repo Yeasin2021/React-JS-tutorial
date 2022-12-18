@@ -173,7 +173,7 @@ const BarCharts = () => {
           
         ]; 
         
-        console.log(valueHard)
+        // console.log(valueHard)
       }
 
     return (
