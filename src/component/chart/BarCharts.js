@@ -116,8 +116,6 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid } from 'rec
 
 
 
-// import { useState, useRef } from 'react';
-// import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid } from 'recharts';
 
 
 const BarCharts = () => {
