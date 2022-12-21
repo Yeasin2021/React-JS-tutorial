@@ -3,8 +3,10 @@ import Music from './coin.mp3';
 
 
 const Sound = () => {
+// Audio class declare
 const audio = new Audio(Music);
 const start = () => {
+    // class method access
     audio.play()
   }
   return (
