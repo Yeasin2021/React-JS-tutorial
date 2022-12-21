@@ -31,6 +31,7 @@ import { useParams } from 'react-router-dom';
 import ImageForms from './image/ImageForms';
 import UserForm from './useRef/UserForm';
 import BarCharts from './chart/BarCharts';
+import Sound from './sound/Sound';
 
 
 
@@ -68,6 +69,7 @@ import BarCharts from './chart/BarCharts';
                 <Route path='/image-form' element={<ImageForms />} />
                 <Route path='/userref' element={<UserForm />} />
                 <Route path='/chart' element={<BarCharts />} />
+                <Route path='/sound' element={<Sound />} />
                 
                 {/* <Route path='/page' element={<Header />} /> */}
                 <Route path='/*' element={<Error404 />} />
