@@ -3,10 +3,13 @@ import Music from './coin.mp3';
 
 
 const Sound = () => {
-
+const audio = new Audio(Music);
+const start = () => {
+    audio.play()
+  }
   return (
     <div>
-      <button>Click</button>
+      <button onClick={start}>Click</button>
     </div>
   )
 }
