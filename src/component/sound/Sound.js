@@ -9,7 +9,7 @@ const start = () => {
   }
   return (
     <div>
-      <button onClick={start}>Click</button>
+      <button onClick={start} style={{ display:"flex",margin:"auto",marginTop:"20px" }}>Click</button>
     </div>
   )
 }
